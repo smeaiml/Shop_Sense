@@ -1,0 +1,16 @@
+pandas>=2.0
+pydantic>=2.0
+fastapi>=0.110
+uvicorn[standard]>=0.27
+langgraph>=0.2
+langgraph-checkpoint-sqlite>=3.1
+typing-extensions>=4.8
+openai>=1.50
+qdrant-client>=1.12
+fastembed>=0.5
+mcp<2,>=1.12
+pypdf>=5
+
+[dev]
+pytest>=8.0
+httpx>=0.27

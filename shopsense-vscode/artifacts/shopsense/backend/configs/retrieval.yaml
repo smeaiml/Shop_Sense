@@ -1,0 +1,17 @@
+corpus: data/shopsense/corpus
+chunking:
+  max_chars: 1100
+  overlap_chars: 140
+embeddings:
+  provider: fastembed
+  model: BAAI/bge-small-en-v1.5
+  dimensions: 384
+qdrant:
+  collection: shopsense_policy
+  runtime_path: runtime/qdrant
+hybrid:
+  lexical_weight: 0.62
+  vector_weight: 0.38
+  category_match_boost: 3.0
+  minimum_answer_score: 2.0
+  top_k: 5

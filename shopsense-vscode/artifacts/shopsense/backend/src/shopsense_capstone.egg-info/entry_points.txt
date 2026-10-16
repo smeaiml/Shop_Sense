@@ -1,0 +1,3 @@
+[console_scripts]
+shopsense-api = capstone.api.main:run
+shopsense-mcp = capstone.mcp.server:run

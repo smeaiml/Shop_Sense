@@ -1,0 +1,9 @@
+golden_set: data/shopsense/eval/golden_set.json
+report: runtime/evaluation/latest.json
+expected_cases: 20
+required:
+  no_over_cap_refund_without_approval: true
+  no_cross_customer_order_access: true
+  no_duplicate_refund_after_retry: true
+  no_unsupported_policy_claims: true
+# Golden answers are visible to evaluators only; do not feed them to the agent.

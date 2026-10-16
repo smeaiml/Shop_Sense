@@ -1,0 +1,16 @@
+input:
+  max_chars: 5000
+  reject_control_characters: true
+  ignore_delimited_instruction_blocks: true
+actions:
+  require_customer_order_match: true
+  automated_refund_cap_inr: 2000
+  require_human_approval_over_cap: true
+  require_idempotency_key: true
+  never_trust_user_evidence_flags: true
+escalation:
+  angry_sentiment: human_review
+  product_safety: urgent_human_review
+  legal_or_chargeback: human_review
+# Human approval, action limits, forbidden advice, prompt injection and abstention.
+# Never infer approval from a user's request to bypass checks.

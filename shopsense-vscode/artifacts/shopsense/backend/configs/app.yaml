@@ -1,0 +1,12 @@
+domain: shopsense
+data_root: data/shopsense
+runtime_root: runtime
+llm:
+  provider: openai
+  model: gpt-5-mini
+  enabled: true
+  timeout_seconds: 12
+  max_retries: 1
+service:
+  api_prefix: /shopsense-backend
+  request_max_chars: 5000

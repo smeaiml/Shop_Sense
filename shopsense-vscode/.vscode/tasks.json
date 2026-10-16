@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ShopSense: Setup",
+      "type": "process",
+      "command": "node",
+      "args": ["scripts/setup-local.mjs"],
+      "problemMatcher": []
+    },
+    {
+      "label": "ShopSense: Run Local Demo",
+      "type": "process",
+      "command": "node",
+      "args": ["scripts/run-local.mjs"],
+      "problemMatcher": []
+    }
+  ]
+}

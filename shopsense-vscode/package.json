@@ -1,0 +1,15 @@
+{
+  "name": "shopsense-vscode",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.26.1",
+  "scripts": {
+    "setup": "node scripts/setup-local.mjs",
+    "dev": "node scripts/run-local.mjs",
+    "build": "pnpm --filter @workspace/shopsense run build",
+    "typecheck": "pnpm --filter @workspace/api-client-react exec tsc -b && pnpm --filter @workspace/shopsense run typecheck"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3"
+  }
+}
